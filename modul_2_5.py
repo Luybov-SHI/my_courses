@@ -1,8 +1,10 @@
 def get_matrix (n, m, value):
     matrix = []
+    if value==0:
+        value = 1
     for i in range(n):
         list_ = []
-        matrix.append(list_)           
+        matrix.append(list_)
         for j in range(m):
             list_.append(value)
     return matrix
